@@ -1,0 +1,64 @@
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.hero__container img {
+    display: none;
+    position: absolute;
+    height: 90vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.hero__head {
+    text-align: center;
+    font-size: 3rem;
+    color: #0052D4;
+    font-weight: 800;
+    animation: fadeIn 1s;
+}
+
+.hero__info {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #4364F7;
+    animation: fadeIn 1.5s;
+}
+
+.hero__btn {
+    align-self: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 10rem;
+    text-align: center;
+    border-radius: 1rem;
+    animation: fadeIn 2s;
+}
+
+.hero__btn a {
+    color: #fff;
+    animation: fadeIn 2.5s;
+}
+
+.hero__btn a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+

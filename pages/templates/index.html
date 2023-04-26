@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+{% extends 'base.html' %}
+{% load static %}
+
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <meta charset="UTF-8">
-    <title>ABC</title>
+
+    {% block title %}
+    <title>ABC | Home </title>
+    {% endblock %}
+
+    {% block extra_css %}
+        <link rel="stylesheet" href="{% static 'pages/css/index.css' %}">
+    {% endblock %}
 </head>
 <body>
-    <h1> Test </h1>
+    {% include 'navbar.html' %}
+
+    {% block content %}
+        
+    <!-- Hero -->
+    <div class="hero__container">
+        <img src="{% static 'pages/img/background.jpg' %}" alt="hero-img">
+        <div class="hero__head">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, porro.
+        </div>
+        <div class="hero__info">
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div class="hero__btn">
+            <a href="#"> More </a>
+        </div>
+    </div>    
+        
+    {% endblock %}
+
+    {% include 'footer.html' %}
+
+    {% block extra_js %}
+    {% endblock %}
 </body>
 </html>

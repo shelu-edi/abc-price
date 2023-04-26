@@ -1,0 +1,41 @@
+.nav__container {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    opacity: .8;
+    height: 4rem;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+}
+
+.nav__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    height: 4rem;
+    width: 100%;
+    opacity: .8;
+    z-index: 1;
+    background: #fff;
+}
+
+.nav__logo {
+    font-size: 2rem;
+    padding: 1rem 0 1rem 2rem;
+    font-weight: 800;
+    background: -webkit-linear-gradient( #6FB1FC, #4364F7, #0052D4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav__link {
+    padding: 2rem 0 1rem 0;
+    color: #0052D4;
+    font-weight: 700;
+}
+
+.nav__link:hover {
+    text-decoration: none;
+    color: #4364F7;
+}
+

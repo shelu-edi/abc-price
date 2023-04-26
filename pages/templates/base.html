@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <meta charset="UTF-8">
+
+    {% block tags %}
+    {% endblock %}
+
+    {% block title %}
+    <title>ABC </title>
+    {% endblock %}
+
+    <link rel="icon" href="{% static 'pages/img/pdec-logo-white-favicon.png' %}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+       * {
+           font-family: 'Poppins', sans-serif;
+        }
+
+</style>
+
+
+    {% block extra_css %}
+
+    {% endblock %}
+     </head>
+<body>
+    {% include 'navbar.html' %}
+
+
+    {% block content %}
+        Some Content
+    {% endblock %}
+
+    {% include 'footer.html' %}
+
+    {% block extra_js %}
+    {% endblock %}
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+        });
+    </script>
+
+</body>
+
+</html>
